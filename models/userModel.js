@@ -6,7 +6,7 @@ const addressSchema = new mongoose.Schema({
 
 const userSchema = new mongoose.Schema({
   name: { type: String, required: true },
-  addresses: [addressSchema]  // One-to-many relationship
+  addresses: [addressSchema]  
 });
 
 const User = mongoose.model('User', userSchema);
